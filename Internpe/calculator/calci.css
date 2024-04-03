@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background-image: url('back.jpg'); /* Replace 'background.jpg' with the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calculator {
+  width: 300px;
+  margin: 0; /* Remove default margin */
+  margin-left: 20%; /* Add left margin to move the calculator box */
+  float: left; /* Float the calculator box to the left */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  width: 60px; /* Increase button width */
+  height: 60px; /* Increase button height */
+  font-size: 20px;
+  margin: 5px; /* Adjust margin for spacing between buttons */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 5px 0px 0px #c0c0c0, 0px 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+
+input[type="button"]:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+input[type="button"].operator {
+  background-color: #f0a500;
+  color: #fff;
+}
+
+input[type="button"].operator:hover {
+  background-color: #e69500;
+}
+
+input[type="button"].equals {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+input[type="button"].equals:hover {
+  background-color: #43a047;
+}
+
+input[type="button"].clear {
+  background-color: #e53935;
+  color: #fff;
+}
+
+input[type="button"].clear:hover {
+  background-color: #c62828;
+}
